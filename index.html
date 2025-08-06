@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+  <body>
+    <h1>Calculadora</h1>
+    <input id="a" type="number" placeholder="a">
+    <input id="b" type="number" placeholder="b">
+    <button onclick="calc()">Sumar</button>
+    <p id="out"></p>
+
+    <script src="calc.js"></script>
+    <script>
+      function calc(){
+        const a = Number(document.getElementById('a').value);
+        const b = Number(document.getElementById('b').value);
+        document.getElementById('out').innerText = sum(a,b);
+      }
+    </script>
+  </body>
+</html>
